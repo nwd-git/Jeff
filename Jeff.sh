@@ -43,7 +43,6 @@ function BANNER()
 
 function REMOVE()
 {
-	echo "duhai"
 	count=`ls -1 $HOME + JEFF/*.txt 2>/dev/null | wc -l`
 	echo "$count"
 	if [ $count != 0 ]; then 
@@ -236,12 +235,10 @@ while getopts 'bhr' OPTION; do
       ;;
 
     r)
-      echo "negriukai";
       REMOVE;
       exit 1;
       ;;
     ?)
-      echo "ziauruuuu"
       exit 1
       ;;
   esac
